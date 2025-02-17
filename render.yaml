@@ -1,0 +1,15 @@
+services:
+  - name: inventory-management-web
+    type: web
+    runtime: python
+    repo: https://github.com/Piyush240604/Inventory-Management-System
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn core.wsgi:application
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        value: qyu(9l9v%^+r(vt#ecf+36#lis516#3bo5@bo-rd*d%a=!%8#!
+      - key: ALLOWED_HOSTS
+        value: inventory-management.onrender.com
+      - key: DEBUG
+        value: true
