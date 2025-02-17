@@ -5,7 +5,7 @@ services:
     repo: https://github.com/Piyush240604/Inventory-Management-System
     branch: main
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn core.wsgi:application
+    startCommand: python manage.py runserver 0.0.0.0:8000
     envVars:
       - key: DJANGO_SECRET_KEY
         value: qyu(9l9v%^+r(vt#ecf+36#lis516#3bo5@bo-rd*d%a=!%8#!
