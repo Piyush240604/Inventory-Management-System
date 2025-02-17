@@ -10,6 +10,6 @@ services:
       - key: DJANGO_SECRET_KEY
         value: qyu(9l9v%^+r(vt#ecf+36#lis516#3bo5@bo-rd*d%a=!%8#!
       - key: ALLOWED_HOSTS
-        value: inventory-management.onrender.com
+        value: inventory-management.onrender.com, inventory-management-system-g9hc.onrender.com
       - key: DEBUG
-        value: true
+        value: "false"  # Make sure this is false in production
